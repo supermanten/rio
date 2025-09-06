@@ -1,0 +1,64 @@
+{
+  "layer": "top",
+  "position": "top",
+  "mod": "dock",
+  "height": 30,
+  "exclusive": true,
+  "passthrough": false,
+  "gtk-layer-shell": true,
+  "reload_style_on_change": true,
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": ["bluetooth","network", "pulseaudio", "custom/power"],
+  "hyprland/workspaces": {
+    "format": "●",
+    "rotate": 0,
+    "all-outputs": true,
+    "active-only": false,
+    "on-click": "activate",
+    "disable-scroll": false,
+    "on-scroll-up": "hyprctl dispatch workspace -1",
+    "on-scroll-down": "hyprctl dispatch workspace +1",
+    "persistent-workspaces": {}
+  },
+  "hyprland/window": {
+    "format": "{}",
+    "max-length": 25,
+  },
+  "network": {
+    "tooltip": false,
+    "format-wifi": "<span size='11000' foreground='#a6e3a1'>  </span>{essid}",
+    "format-ethernet": "<span size='11000' foreground='#f38ba8'>󰤭  </span> Disconnected",
+    "format-linked": "{ifname} (No IP) ",
+    "format-disconnected": "<span size='11000' foreground='#f38ba8'>  </span>Disconnected",
+    "tooltip-format-wifi": "Signal Strenght: {signalStrength}%"
+  },
+  "bluetooth": {
+    "format": " ",
+    "format-disabled": "󰂳",
+    "format-connected": "󰂱 {num_connections}",
+    "tooltip-format": " {device_alias}",
+    "tooltip-format-connected": "{device_enumerate}",
+    "tooltip-format-enumerate-connected": " {device_alias} 󰂄{device_battery_percentage}%",
+    "tooltip": true,
+  },
+  "clock": {
+    "tooltip": false,
+    "format": "{:%H:%M %p}",
+    "format-alt": "{:%R | 󰃭 %d·%m·%y}",
+  },
+  "pulseaudio": {
+    "tooltip": false,
+    "format": "{icon} {volume}%",
+    "format-muted": "",
+    "format-icons": {
+      "default": ["", "", " "]
+    },
+    // "on-click": "pavucontrol"
+  },
+  "custom/power": {
+    "format": "<span color=\"#f38ba8\"> </span>",
+    "tooltip": false,
+    "on-click": "sh -c '(sleep 0.5s; wlogout --protocol layer-shell)' & disown",
+  },
+}

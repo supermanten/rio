@@ -1,0 +1,84 @@
+/* -----------------------------------------------------------------------------
+
+    This stylesheet is designed to be used with the Catppuccin themes.
+
+    It imports the dynamically generated colors.css and uses CSS variables.
+
+    -------------------------------------------------------------------------- */
+
+@import "colors.css";
+
+/* -------------------- /
+/ Individual Button Icons /
+/ -------------------- */ 
+button {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20%;
+  background-color: rgba(200, 220, 255, 0); /* Highly transparent background */
+  animation: gradient_f 10s ease-in infinite;
+  /* Explicitly list properties for smooth transitions */
+  transition:
+    background-size 0.3s cubic-bezier(0.55, 0, 0.28, 1.682),
+    margin 0.3s cubic-bezier(0.55, 0, 0.28, 1.682),
+    background-color 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out;
+  border-radius: 80px;
+  border: 0px;
+  outline-style: none;
+}
+
+button:focus {
+  background-size: 50%;
+  border: 0px;
+  outline-style: none;
+}
+
+button:hover {
+  background-size: 50%;
+  margin: 30px;
+  border-radius: 80px;
+  outline-style: none;
+}
+
+
+#lock {
+background-image: image(url("icons/lock.svg"));
+}
+#logout {
+background-image: image(url("icons/logout.svg"));
+}
+#suspend {
+background-image: image(url("icons/suspend.svg"));
+}
+#hibernate {
+background-image: image(url("icons/hibernate.svg"));
+}
+#shutdown {
+background-image: image(url("icons/shutdown.svg"));
+}
+#reboot {
+background-image: image(url("icons/reboot.svg"));
+}
+
+/* -------------------- /
+/ Hover Icons /
+/ -------------------- */
+#lock:hover {
+background-image: image(url("hover/lock.svg"));
+}
+#logout:hover {
+background-image: image(url("hover/logout.svg"));
+}
+#suspend:hover {
+background-image: image(url("hover/suspend.svg"));
+}
+#shutdown:hover {
+background-image: image(url("hover/shutdown.svg"));
+}
+#reboot:hover {
+background-image: image(url("hover/reboot.svg"));
+}
+#hibernate:hover {
+background-image: image(url("hover/hibernate.svg"));
+}

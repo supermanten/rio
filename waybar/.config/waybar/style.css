@@ -1,0 +1,114 @@
+@import "color.css"; 
+
+* {
+	font-family: "JetBrainsMono Nerd Font";
+	font-weight: bold;
+	min-height: 0;
+	font-size: 13px;
+}
+
+window#waybar {
+  transition-property: transparent;
+  transition-duration: 0.5s;
+  background: transparent;
+  border-radius: 10px;
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+/*-----module groups----*/
+.modules-left, .modules-center, .modules-right {
+	background: transparent; 
+ 	border: 0.5px solid @overlay0;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-right: 4px;
+	padding-left: 4px;
+	border-radius: 10px;
+} 
+
+#workspaces button {
+  color: @green;
+  box-shadow: none;
+  text-shadow: none;
+  padding: 0px;
+  border-radius: 9px;
+  padding-left: 4px;
+  padding-right: 4px;
+  animation: gradient_f 20s ease-in infinite;
+  transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#workspaces button.persistent {
+	color: @surface1;
+	border-radius: 10px;
+}
+
+#workspaces button.active {
+	color: @mauve;
+  	border-radius: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#workspaces button.focused {
+  color: #d8dee9;
+}
+
+#workspaces button.urgent {
+	color: @red;
+ 	border-radius: 0px;
+}
+
+#taskbar button:hover,
+#workspaces button:hover {
+	border-radius: 10px;
+	color: @peach;
+	background-color: @surface0;
+ 	padding-left: 2px;
+    padding-right: 2px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#pulseaudio,
+#clock,
+#custom-power,
+#bluetooth
+#network,
+#mode,
+
+#clock {
+  color: @lavender;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+
+#custom-power {
+  color: @pink;
+  padding-right: 4px;
+  padding-left: 8px;
+}
+
+#pulseaudio {
+  color: @sapphire;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+
+#network {
+  color: @sky;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+
+#bluetooth {
+  color: @blue;
+  border-radius: 10px;
+  padding-right: 4px;
+  padding-left: 4px;
+}
