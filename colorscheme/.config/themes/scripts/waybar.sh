@@ -12,7 +12,7 @@ GLOBAL_THEMES_DIR="$HOME/.config/themes"
 WAYBAR_THEMES_DIR="$GLOBAL_THEMES_DIR/waybar"
 WAYBAR_CONFIG_DIR="$HOME/.config/waybar"
 WAYBAR_COLOR_FILE="$WAYBAR_CONFIG_DIR/color.css"
-WAYBAR_REFRESH_SCRIPT="$WAYBAR_CONFIG_DIR/scripts/waybar.sh"
+WAYBAR_REFRESH_SCRIPT="$WAYBAR_CONFIG_DIR/scripts/wabar.sh"
 
 # Get the selected flavor from the first command-line argument
 SELECTED_FLAVOR="$1"
@@ -32,7 +32,7 @@ if [ ! -f "$SOURCE_THEME_FILE" ]; then
 fi
 
 # Create a symbolic link to the selected theme file. The -f flag forces overwrite.
-ln -sf "$SOURCE_THEME_FILE" "$WAYBAR_STYLE_FILE"
+ln -sf "$SOURCE_THEME_FILE" "$WAYBAR_COLOR_FILE"
 
 echo "Waybar theme successfully updated to '$SELECTED_FLAVOR'."
 

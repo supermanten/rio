@@ -1,0 +1,1238 @@
+ls
+pwd
+p
+nvims
+ls
+history | grep nushell
+ls
+z
+kthims
+y
+ktheme
+ls
+fastfetch
+fs
+ls
+pwd
+y
+cd dot
+ls
+gs
+ga
+gc "some changes"
+git config --global user.email "rio353@gamil.com"
+git config --global user.name "rio"
+gc "some changes"
+ls
+gs
+y
+ls
+fs
+ls
+pwd
+which go
+go
+cargo
+ls
+python --version
+fs
+lsmod |grep nouveau
+lsmod |grep nvidia
+lsmod |grep nouveau
+ls
+chsh -s nu
+which nu
+which /usr/sbin/nu
+chsh -s /usr/sbin/nu
+ls
+fs
+ls
+y
+lsd
+stow env
+y
+bash
+exit
+ls
+pwd
+ls
+sudo timeshift --list
+sudo timeshift --delete --snapshot ' 2025-08-31_17-47-59'
+sudo timeshift --delete --snapshot '2025-08-31_17-47-59'
+sudo timeshift --list
+sudo timeshift --delete --snapshot '2025-08-31_16-22-52'
+sudo timeshift --list
+sudo timeshift --delete --snapshot '2025-08-31_17-16-53'
+sudo timeshift --list
+lsblk
+sys mem
+sudo timeshift --list
+du -h
+df -h
+sys disks
+ls
+cd Downloads/
+ls
+tar -xvf flutter_linux_3.35.2-stable.tar.xz
+ls
+y
+cd nushell
+p
+nvim
+ls
+source config.nu
+flutter --version
+flutter doctor
+ld
+cd
+y
+ls
+flutter create todo
+y
+flutter --no-enable
+flutter -h
+flutter config --no-enable-ios
+flutter config --no-enable-windows-desktop
+flutter config --no-enable-macos-desktop
+flutter config --no-enable-ios
+flutter doctor
+cd dow
+ls
+unzip platform-tools-latest-linux.zip
+y
+cat ~/.config/nushell/env.nu
+paru -S bat
+ls
+cat ~/.config/nushell/env.nu
+y
+nvim  ~/.config/nushell/env.nu
+adb --version
+flutter doctor
+flutter config --no-enable-web
+flutter doctor
+paru -S eglinfo
+flutter doctor
+flutter doctor -v
+cd Downloads/
+ls
+unzip commandlinetools-linux-13114758_latest.zip
+y
+nvim  ~/.config/nushell/env.nu
+ls
+ls .sdk/
+cat ~/.config/nushell/env.nu
+flutter doctor -v
+flutter doctor 
+y
+cd Downloads/
+ls
+unzip Tools-20250831T135322Z-1-001.zip
+cd hypr
+ls
+p
+v
+cd nushell
+ls
+y
+paru -Rns btop
+paru -Rns yazi
+paru -Rns lsd
+paru -Rns bat
+paru -Rns tmux
+paru -Rns starship
+paru -Rns zoxide
+paru -Rns ripgrep
+v
+y
+yazi
+cd nushell
+z
+z nushell
+ls
+ls -a
+ls Tools/
+ls Tools/zoxide/
+cat
+nvim
+nvim  ~/.config/nushell/env.nu
+nvim  ~/.config/nushell/config.nu
+nvim  ~/.config/nushell/env.nu
+cd 
+rm -rf .local/share/nushell
+ls
+cat 
+nvim  ~/.config/nushell/config.nu
+ls
+ls Tools/zoxide/
+flutter doctor 
+nvim  ~/.config/nushell/env.nu
+exit
+yazi
+nvim  ~/.config/nushell/env.nu
+nvim  ~/.config/nushell/config.nu
+ls
+git sttus dotfiles/nushell/.config/nushell/
+git ststus dotfiles/nushell/.config/nushell/
+git status dotfiles/nushell/.config/nushell/
+git status dotfiles
+ls
+fastfetch
+ls
+bash
+exit
+nvim  ~/.config/nushell/config.nu
+nvim  ~/.config/nushell/config.nu
+$env.HOME
+y
+bash
+exit
+bash
+ls
+y
+ls
+y
+onefetch
+nerdfetch
+y
+ls
+chmod +x btop
+y
+cd dow
+y
+ls
+chmod +x rg
+paru -Rns ripgrep
+ls
+sudo timeshift --list
+bash
+sudo timeshift --list
+cd dow
+ls
+tar -xvf jdk-24_linux-aarch64_bin.tar.gz
+cat ~/.config/nushell/env.nu
+y
+nvim  ~/.config/nushell/e
+nvim  ~/.config/nushell/env.nu
+cd Downloads/
+ls
+y
+tar -xvf node-v24.7.0-linux-x64.tar.xz
+ls
+tar -xvf maven-mvnd-1.0.2-linux-amd64.tar.gz
+ls
+tar -xvf apache-maven-3.9.11-bin.tar.gz
+ls
+tar -xvf go1.25.0.linux-amd64.tar.gz
+ls
+tar -xvf gradle-9.0.0-bin.zip
+unzip -xvf gradle-9.0.0-bin.zip
+ls
+unzip  gradle-9.0.0-bin.zip
+ls
+y
+nvim  ~/.config/nushell/env.nu
+z
+ls
+df -h
+sys disks
+ls
+pwd
+y
+ls
+cd nushell
+v
+ls
+btm
+gping google.com
+y
+ls
+y
+fs
+lsblk
+cyme -usb
+cyme --help
+cyme -D
+cyme --lsusb
+y
+ls
+pwd
+paru -S foot
+ls
+fastfetch
+exit
+ls
+cd dotfiles/
+ls
+stow foot
+cd foot
+ls
+p
+cd .config/foot/
+ls
+pwd
+ls
+fastfetch
+ls
+v
+cd hypr
+fastfetch
+v
+paru -Rns kitty
+fastfetch
+ls
+cd hypr
+v
+ls
+pwd
+cd /boot/grub/
+ls
+y
+cd
+y
+gs
+ga
+gc "remove kitty"
+y
+sudo cp -r ../grub_theme/ /boot/grub/
+cd /boot/grub/
+ls
+y
+ls
+sudo move grub_theme ./catppuccin
+sudo mv grub_theme ./catppuccin
+ls
+sudo mv catppuccin themes
+ls
+sudo mv themes/starfield ./
+ls
+cd /boot/grub/
+ls
+cd themes/
+ls
+cd catppuccin/
+ls
+y
+sudo nvim grub.cfg
+ls
+cd /etc/default/grub
+cd /etc/default/
+ls
+sudo nvim grub
+cd /boot/grub/
+ls
+la themes/
+la themes/catppuccin/
+ls
+cd /etc/default/
+sudo nvim grub
+sudo grub-mkconfig -0 /boot/grub/grub.cfg
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+reboot
+cd /etc/ly/
+sudo nvim config.ini
+exit
+cd /etc/ly/
+sudo nvim config.ini
+exit
+ls
+histore | grep timeshift
+history | grep timeshift
+sudo timeshift --list
+bash
+sudo timeshift --list
+df -h
+sys disks
+ls
+pwd
+cd hypr
+y
+w
+y
+ls
+y
+cd
+cd dot
+stow swaync
+hyprctl reload
+y
+hyprctl reload
+v
+gs
+y
+ls
+ee
+ls
+ping -c 5 google.com
+pu; puu
+cd nv
+v
+flutter doctor 
+flutter --version
+cd nushell
+y
+flutter --version
+flutter upgrade
+sudo timeshift --list
+ls
+pwd
+y
+cd dot
+ls
+stow --help
+stow -R waybar
+y
+ls
+cd way bar
+cd waybar
+y
+ls
+paru -S wallust
+ls
+fastfetch
+pwd
+lsd
+pw
+ls
+pwd
+cd waybar
+y
+nvim
+cd nv
+v
+cd dot
+gs
+ga
+gc "config nvim"
+gs
+cd hypr
+v
+cd hypr
+p
+ls
+v
+paru -S swaync
+paru -Q swaync
+notify-send "hello"
+send-notify "hello"
+btm
+cd hypr
+notify-send "Hello swaync!"
+paru -S libnotify
+notify-send "Hello swaync!"
+y
+y
+cd ~/.config/images
+ls
+y
+pq | grep qt5
+pq | grep qt
+fastfetch
+v
+y
+v
+fastfetch
+cd hypr
+v
+lsd
+pwd
+fs
+ls
+pwd
+cd hypr
+v
+p
+cd .config/hypr/
+v
+cd dot
+gs
+ga
+gc "config nvim"
+ls
+pe
+pe | count
+pe
+y
+ls
+notify-send "Hello swaync!"
+cd hypr
+v
+y
+cd rofi
+y
+v
+y
+v
+cd swaync
+p
+v
+cd dot
+ls
+stow swaync
+notify-send "Hello swaync!"
+v
+cd swaync
+pkill swaync
+notify-send "Hello swaync!"
+swaync &
+notify-send "Hello swaync!"
+hyprctl reload
+notify-send "Hello swaync!"
+swaync 
+notify-send "Hello swaync!"
+pkill swaync && swaync &
+pkill swaync; swaync &
+swaync-client -rs
+swaync &
+v
+notify-send "Hello swaync!"
+cd swaync
+v
+ls
+y
+cd swaync
+v
+notify-send "Hello swaync!"
+ls
+cd swaync
+cat ~/.config/hypr/config/keybind.conf
+pq | grep hyprshot
+pi hyprshot
+ping -c 5 google.com
+pi hyprshot
+hyprctl reload
+ls
+hyprctl reload
+notify-send "Hello swaync!"
+y
+v
+hyprctl reload
+notify-send "Hello swaync!"
+v
+notify-send "Hello swaync!"
+cd dot
+ls
+gs
+gr swaync/
+gs
+git diff
+git diff | cat
+hyprctl reload
+notify-send "Hello swaync!"
+cy
+y
+hyprctl reload
+notify-send "Hello swaync!"
+ls
+y
+hyprctl reload
+notify-send "Hello swaync!"
+y
+notify-send "Hello swaync!"
+cd swaync
+p
+cd ~/.config/swaync/
+v
+notify-send "Hello swaync!"
+cd ~/.config/swaync/
+v
+cd ~/.config/swaync/
+v
+btm
+btop
+swaync &
+swaync
+notify-send "Hello swaync!"
+cd ~/.config/swaync/
+v
+y
+ls
+wget -P "$(bat --config-dir)/themes" https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Mocha.tmTheme
+bash
+y
+ls
+bat `Catppuccin Mocha.tmTheme`
+cat `Catppuccin Mocha.tmTheme`
+cd nv
+ls
+cat init.lua
+cd nushell
+v
+fzf
+fzf --preview 
+fzf --help
+eza
+eza --help
+eza -a
+eza -tree
+ls
+pwd
+ls
+pwd
+fastfetch
+cd nv
+v
+ls
+pwd
+lsd
+ls
+y
+cd nushell
+w
+ls
+pwd
+ls
+pwd
+ls
+sys disks
+ls
+sys mem
+sys disks
+sudo timeshift --list
+v
+lsd
+pwd
+lsd
+cd y
+cd dow
+ls
+jj git clone https://github.com/catppuccin/bottom.git
+y
+btm
+ls
+p
+cd ../../bat/
+ls
+y
+wget -P "$(bat --config-dir)/themes" https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Latte.tmTheme
+y
+wget -P "$(bat --config-dir)/themes" https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Frappe.tmTheme
+y
+wget -P "$(bat --config-dir)/themes" https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Macchiato.tmTheme
+wget -P "$(bat --config-dir)/themes" https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Mocha.tmTheme
+y
+ls
+cat init.lua
+la ly-session.log
+cat ~/.config/nvim/init.lua
+y
+cd dow
+ls
+tar -xvf themes.tar.gz
+y
+btop
+y
+ls
+git clone https://github.com/catppuccin/foot.git
+y
+git clone https://github.com/catppuccin/lsd.git
+ls
+git clone https://github.com/catppuccin/lsd.git
+y
+ls
+lsd
+y
+git clone https://github.com/catppuccin/rofi.git
+y
+git clone https://github.com/catppuccin/swaync.git
+y
+git clone https://github.com/catppuccin/yazi.git\
+y
+git clone https://github.com/catppuccin/yazi.git
+l
+y
+git clone https://github.com/catppuccin/starship.git
+y
+ls
+p
+git clone https://github.com/catppuccin/wlogout.git
+y
+git clone https://github.com/catppuccin/waybar.git
+y
+tree
+which tree
+lt
+cat foot.ini
+y
+ls
+pwd
+lsd
+pwd
+y
+cd hypr
+ls
+cd scripts/
+ls
+y
+ls
+sudo chmod +x themes.sh
+./themes.sh
+lsd
+cd foot
+ls
+./themes.sh
+y
+lsd
+v
+y
+ls
+p
+lt
+cat style.css
+y
+p
+ls
+cd themes
+p
+lt
+cd hypr
+cd scripts
+ls
+./themes.sh
+y
+./themes.sh
+cd ~/.config/bat/
+ls
+lt
+pwd
+lt
+mkdir -p ~/.config/bat/themes
+mkdir  ~/.config/bat/themes/
+ls  ~/.config/bat/themes/
+mv ~/.config/bat/catppuccin/* ~/.config/bat/themes/
+y
+pwd
+lt
+y
+ls
+pwd
+y
+cd ~/.config/bat/
+p
+rmdir ~/.config/bat/themes
+y
+ln -s ~/.config/themes/bat ~/.config/bat/themes
+./themes.sh
+y
+touch ~/.config/bat/config
+nvim  ~/.config/bat/config
+ls
+cd nv
+ls
+cat init.lua
+./themes.sh
+cd nv
+cat init.lua
+:q
+./themes.sh
+y
+ls
+pwd
+lt
+ls
+cp themes.sh ~/backup/theme1.sh
+./themes.sh
+y
+ls
+pwd
+lt
+cp themes.sh ~/backup/theme2.sh
+./themes.sh
+btop
+y
+pwd
+lt
+mkdir  ~/.config/themes/yazi
+y
+find ~/.config/yazi/yazi/themes -name "*.toml" -exec mv -t ~/.config/themes/yazi {} +
+y
+bash 
+y
+rm -rf ~/.config/yazi/yazi/themes
+ln -s ~/.config/themes/yazi ~/.config/yazi/themes
+cp themes.sh ~/backup/theme3.sh
+yazi
+./themes.sh
+y
+./themes.sh
+y
+./themes.sh
+y
+y
+git clone https://github.com/catppuccin/nushell.git
+y
+pwd
+lt
+nvim ~/.config/nushell/config.nu
+cd ~/.config/nushell
+y
+ln -s ~/.config/themes/nushell ~/.config/nushell/themes
+e
+ls
+pwd
+ls
+cp themes.sh ~/backup/yazi.sh
+./themes.sh
+ls
+pwd
+sys disks
+y
+pwd
+lt
+y
+mkdir  ~/.config/starship
+ln -s ~/.config/themes/starship ~/.config/starship/themes
+ls
+pwd
+lsd
+cp themes.sh ~/backup/nushell.sh
+./themes.sh
+cd ~/.local/share/Trash/
+cd ~/.local/share/Trash/files/
+ls
+z
+cd ~/.local/share/Trash/files/
+y
+nvim ~/.config/starship.toml
+touch ~/.config/starship/starship.toml
+./themes.sh
+ls
+cd ~/.local/share/Trash/files/
+eza
+ls
+cd ~/.local/share/Trash/files/
+pwd
+lsd
+cd ~/dotfiles/
+ls
+lsd
+pwd
+./themes.sh
+nvim ~/.config/starship/starship.toml
+ls
+cd ~/dotfiles/
+pwd
+lsd
+cd ~/dotfiles/
+pwd
+lsd
+cd ~/dotfiles/
+pwd
+lsd
+pwd
+lsd
+y
+ls
+ln -s starship.toml starship/starship.toml
+y
+ln -s starship.toml starship/starship.toml
+ln -s starship/starship.toml starship.toml
+./themes.sh
+ls
+pwd
+sys disks
+./themes.sh
+ls
+pwd
+cd
+pwd
+lsd
+lsd -a
+y
+ls
+y
+pwd
+lt
+y
+pwd
+lt
+mkdir  ~/.config/themes/swaync
+mv ~/.config/swaync/*.scss ~/.config/themes/swaync/
+cp themes.sh ~/backup/starship.sh
+./themes.sh
+q
+./themes.sh
+swaync
+./themes.sh
+nvim themes.sh
+cd
+~/.config/hypr/scripts/themes.sh
+y
+notify-send "Hello swaync!"
+y
+cd do
+y
+ls
+unzip swaync-1.0.1.zip
+y
+pwd
+ls
+cd scripts
+cd ~/.config/hypr/scripts/
+./themes.sh
+notify-send "Hello swaync!"
+cp themes.sh ~/backup/swaync.sh
+v
+fastfetch
+cd nv
+v
+cd nv
+y
+pwd
+ls
+cd rio/
+ls
+jj --help
+jj status
+jj init 
+jj git init
+jj status
+jj commit -m "adde some theme"
+jj status
+jj status | cat
+ls
+lsd
+pwd
+z
+ls
+./themes.sh
+y
+cd hypr
+cd ~/.config/hypr/scripts/
+v
+ls
+pwd
+lt
+sudo chmod +x themes/*.sh
+lt
+./themes/themes.sh
+y
+cd ~/.config/hypr/scripts/
+ls
+./themes/themes.sh
+lsd
+pwd
+lsd
+y
+pwd
+lt
+..
+...
+ls
+lt
+y
+pwd
+lt
+ls
+sudo chmod +x themes/*.sh
+sudo chmod +x lsd.sh
+ls
+./themes.sh
+y
+ls
+pwd
+lt
+./themes.sh
+r
+./themes.sh
+y
+ls
+ls -a
+ls -l
+lsd
+ls
+./themes.sh
+lsd
+pwd
+lsd -a
+y
+y
+cd ~/.config/nvim
+vv
+v
+ls
+cd lua/plugins/
+pwd
+cat nvim-colorscheme.lua
+ls
+sudo chmod +x nvim.sh
+ls
+./themes.sh
+y
+ls
+cd ~/.config/nvim
+v
+y
+ls -l
+./themes.sh
+cd ~/.config/nvim
+y
+cd ~/.config/nvim
+v
+cd ~/.config/nvim
+v
+cd ~/.config/nvim
+v
+y
+ls
+lsd -a
+y
+ls
+y
+y
+ls
+git clone https://github.com/catppuccin/hyprland.git
+y
+ls
+cd ~/.config/themes/hyprland/
+ls
+lt
+cat ~/.config/hypr/hyprlock.conf
+cd ~/.config/hypr/scripts/
+y
+ls
+cd themes/
+ls
+sudo chmod +x hyprlock.sh
+./themes.sh
+y
+ls
+cp scripts ~/backup/scripts-v1
+cp -r scripts ~/backup/scripts-v1
+ls
+cd ~/.config/themes/
+git clone https://github.com/catppuccin/wlogout.git
+y
+lt
+y
+v
+y
+lt
+cd ~/.config/wlogout
+ls
+lsd
+y
+cd ~/.config/themes/wlogout/
+y
+cd ~/.config/hypr/scripts/
+cat themes/themes.sh
+vh
+./themes.sh
+ls
+cd themes/
+ls
+sudo chmod +x wlogout.sh
+./themes.sh
+y
+y
+./themes.sh
+y
+v 
+cd hypr
+cd ~/.config/hypr/scripts/
+y
+pkill wlogout
+y
+ls -l
+y
+lt
+v
+lt
+cat config
+cat style.css
+pkill wlogout
+wlogout
+pkill wlogout
+wlogout
+pkill wlogout
+wlogout
+pkill wlogout
+wlogout
+pkill wlogout
+wlogout
+pkill wlogout
+wlogout
+pkill wlogout
+wlogout
+pkill wlogout
+wlogout
+~/.config/hypr/scripts/themes/themes.sh
+y
+ls
+cd ~/.config/hypr/scripts/
+ls
+cd themes/
+ls
+./wlogout.sh
+v
+y
+ls
+pwd
+pkill wlogout
+wlogout
+cd ~/.config/hypr/scripts/
+v
+y
+cd ~/.config/hypr/scripts/
+./wlogout.sh
+ls
+cd themes/
+./wlogout.sh
+./swaync.sh
+./themes/
+ls
+./themes.sh
+v
+y
+pkill wlogout
+wlogout
+y
+pkill wlogout
+wlogout
+y
+~/.config/hypr/scripts/themes/themes.sh
+./themes.sh
+y
+cd ~/.config/hypr/scripts/
+ls
+./themes/themes.sh
+y
+lsd -l
+./themes/themes.sh
+y
+v
+cd ~/.config/wlogout/
+pkill wlogout
+wlogout
+v
+cd ~/.config/hypr/scripts/
+v
+y
+~/.config/hypr/scripts/themes/themes.sh
+y
+cd
+pkill wlogout
+wlogout
+pkill wlogout
+wlogout
+~/.config/hypr/scripts/themes/themes.sh
+pkill wlogout
+wlogout
+~/.config/hypr/scripts/themes/themes.sh
+y
+ls
+ping -c 5 google.com
+pu; puu
+cd ~/.config/nushell
+ls
+v
+ls  /usr/share/grub/themes/
+ls  /usr/share/grub/
+ls  /usr/share/grub/themes/starfield/
+cd dow
+cd ~/Downloads/
+git clone https://github.com/catppuccin/grub.git && cd grub
+git clone https://github.com/catppuccin/grub.git; cd grub
+ls
+ls src/
+sudo cp -r src/* /usr/share/grub/themes/
+sudo nvim /etc/default/grub
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+sudo timeshift --list
+sudo nvim /etc/default/grub
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+ls
+pu; puu
+y
+y
+cd nv
+z
+cd ~/.config/nvim
+v
+tmux
+y
+mkdir -p ~/.config/tmux/plugins/catppuccin
+mkdir  ~/.config/tmux/plugins/catppuccin/
+git clone -b v2.1.3 https://github.com/catppuccin/tmux.git ~/.config/tmux/plugins/catppuccin/tmux
+ls
+z
+cd
+y
+cd ~/Downloads/
+ls
+git clone https://github.com/catppuccin/posting.git
+y
+zelliz
+cd ~/Downloads/
+git clone https://github.com/catppuccin/cava.git
+git clone https://github.com/catppuccin/superfile.git
+git clone https://github.com/catppuccin/lazygit.git
+ls
+git clone https://github.com/catppuccin/atuin.git
+y
+ls
+cd ~/Downloads/
+git clone https://github.com/catppuccin/qt5ct.git
+git clone https://github.com/catppuccin/tty.git
+git clone https://github.com/catppuccin/waybar.git
+ls
+fastfetch
+y
+ls
+lt
+ls ~/.config/waybar
+lt
+lsd ~/.config/waybar
+ls
+sudo chmod +x waybar.sh
+./themes.sh
+y
+ls
+./scripts/wabar.sh
+y
+pwd
+ls
+ls scripts/
+cd scripts/
+pwd
+ls
+y
+ls
+pwd
+y
+pwd
+cd
+ls
+./themes.sh
+y
+ls
+sys disks
+y
+cd ~/.config/nvim
+v
+ncim init.lua
+nvim init.lua
+ls
+v
+gs
+cd ~/Downloads/
+git clone https://github.com/meowrch/meowrch.git
+y
+git clone https://github.com/meowrch/meowrch.git
+ls
+git clone https://github.com/meowrch/meowrch.git
+ls
+y
+ls
+./themes.sh
+ls
+v
+./themes.sh
+cd ~/.local/share/Trash/files/
+ls
+mv scripts ~/.config/waybar/
+waybar
+cd ~/.config/themes/scripts/
+./themes.sh
+y
+ls
+ls -l
