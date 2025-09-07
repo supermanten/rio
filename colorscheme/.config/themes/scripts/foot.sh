@@ -24,7 +24,3 @@ else
     echo "Warning: Foot config file '$FOOT_INI' not found. Skipping."
 fi
 
-# Reload Foot by sending SIGHUP to all running foot processes
-pkill -USR1 foot && echo "Foot terminal reloaded." || echo "No running Foot process found."
-
-
