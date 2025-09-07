@@ -1,10 +1,10 @@
 @import "color.css"; 
 
 * {
-	font-family: "JetBrainsMono Nerd Font";
-	font-weight: bold;
-	min-height: 0;
-	font-size: 13px;
+    font-family: "JetBrainsMono Nerd Font";
+    font-weight: bold;
+    min-height: 0;
+    font-size: 13px;
 }
 
 window#waybar {
@@ -20,14 +20,14 @@ window#waybar.hidden {
 
 /*-----module groups----*/
 .modules-left, .modules-center, .modules-right {
-	background: transparent; 
- 	border: 0.5px solid @overlay0;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	padding-right: 4px;
-	padding-left: 4px;
-	border-radius: 10px;
-} 
+    background: transparent;  
+      border: 0.5px solid @overlay0;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 4px;
+    padding-left: 4px;
+    border-radius: 10px;
+}  
 
 #workspaces button {
   color: @green;
@@ -42,13 +42,13 @@ window#waybar.hidden {
 }
 
 #workspaces button.persistent {
-	color: @surface1;
-	border-radius: 10px;
+    color: @surface1;
+    border-radius: 10px;
 }
 
 #workspaces button.active {
-	color: @mauve;
-  	border-radius: 10px;
+    color: @mauve;
+      border-radius: 10px;
     padding-left: 8px;
     padding-right: 8px;
     animation: gradient_f 20s ease-in infinite;
@@ -60,16 +60,16 @@ window#waybar.hidden {
 }
 
 #workspaces button.urgent {
-	color: @red;
- 	border-radius: 0px;
+    color: @red;
+      border-radius: 0px;
 }
 
 #taskbar button:hover,
 #workspaces button:hover {
-	border-radius: 10px;
-	color: @peach;
-	background-color: @surface0;
- 	padding-left: 2px;
+    border-radius: 10px;
+    color: @peach;
+    background-color: @surface0;
+      padding-left: 2px;
     padding-right: 2px;
     animation: gradient_f 20s ease-in infinite;
     transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
@@ -78,9 +78,11 @@ window#waybar.hidden {
 #pulseaudio,
 #clock,
 #custom-power,
-#bluetooth
+#bluetooth,
 #network,
-#mode,
+#mode {
+  border-radius: 10px;
+}
 
 #clock {
   color: @lavender;
@@ -108,7 +110,6 @@ window#waybar.hidden {
 
 #bluetooth {
   color: @blue;
-  border-radius: 10px;
   padding-right: 4px;
   padding-left: 4px;
 }

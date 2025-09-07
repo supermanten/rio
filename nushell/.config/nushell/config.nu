@@ -1,3 +1,4 @@
+
 #Theme
 source ~/.config/nushell/themes/catppuccin_latte.nu
 
@@ -6,11 +7,6 @@ mkdir ($nu.data-dir | path join "vendor/autoload")
 
 # Starship prompt
 starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
-
-# Zoxide integration
-source ~/.config/nushell/themes/catppuccin_latte.nu
-
-# --- Custom Commands ---
 
 # Enhanced yazi command with better error handling
 def --env y [...args] {
@@ -212,4 +208,6 @@ def nvims [...args] {
     nvim ...$args
   }
 }
+
+source ~/.zoxide.nu
 

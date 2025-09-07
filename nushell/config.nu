@@ -8,9 +8,10 @@ mkdir ($nu.data-dir | path join "vendor/autoload")
 starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
 
 # Zoxide integration
-source ~/.config/nushell/themes/catppuccin_latte.nu
-
-# --- Custom Commands ---
+if (which zoxide) {
+    zoxide init nushell | save -f ($nu.data-dir | path join "vendor/autoload/zoxide.nu")
+    source ($nu.data-dir | path join "vendor/autoload/zoxide.nu")
+}
 
 # Enhanced yazi command with better error handling
 def --env y [...args] {
