@@ -1,5 +1,20 @@
 @import "color.css"; 
 
+
+
+
+/* Keyframes for animations */
+@keyframes gradient_f {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes fadein {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 * {
     font-family: "JetBrainsMono Nerd Font";
     font-weight: bold;
@@ -21,14 +36,21 @@ window#waybar.hidden {
 /*-----module groups----*/
 .modules-left, .modules-center, .modules-right {
     background: transparent;  
-      border: 0.5px solid @overlay0;
+    border: 0.5px solid @overlay0;
     padding-top: 0px;
     padding-bottom: 0px;
     padding-right: 4px;
     padding-left: 4px;
     border-radius: 10px;
+    animation: fadein 0.8s ease-in-out;
+    transition: box-shadow 0.3s ease-in-out;
 }  
 
+.modules-left:hover, .modules-center:hover, .modules-right:hover {
+  box-shadow: 0 0 10px @surface1;
+}
+
+/*-----workspaces-----*/
 #workspaces button {
   color: @green;
   box-shadow: none;
@@ -48,7 +70,7 @@ window#waybar.hidden {
 
 #workspaces button.active {
     color: @mauve;
-      border-radius: 10px;
+    border-radius: 10px;
     padding-left: 8px;
     padding-right: 8px;
     animation: gradient_f 20s ease-in infinite;
@@ -56,12 +78,12 @@ window#waybar.hidden {
 }
 
 #workspaces button.focused {
-  color: #d8dee9;
+  color: @text;
 }
 
 #workspaces button.urgent {
     color: @red;
-      border-radius: 0px;
+    border-radius: 0px;
 }
 
 #taskbar button:hover,
@@ -69,12 +91,15 @@ window#waybar.hidden {
     border-radius: 10px;
     color: @peach;
     background-color: @surface0;
-      padding-left: 2px;
+    padding-left: 2px;
     padding-right: 2px;
     animation: gradient_f 20s ease-in infinite;
     transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+    /* Lifting effect using padding instead of transform */
+    padding-bottom: 4px;
 }
 
+/*-----individual modules-----*/
 #pulseaudio,
 #clock,
 #custom-power,
@@ -82,6 +107,8 @@ window#waybar.hidden {
 #network,
 #mode {
   border-radius: 10px;
+  animation: fadein 0.8s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 #clock {
@@ -113,3 +140,17 @@ window#waybar.hidden {
   padding-right: 4px;
   padding-left: 4px;
 }
+
+/* Hover effects for individual modules */
+#pulseaudio:hover,
+#clock:hover,
+#custom-power:hover,
+#bluetooth:hover,
+#network:hover,
+#mode:hover {
+  background-color: @surface0;
+  color: @peach;
+  /* Lifting effect using padding instead of transform */
+  padding-bottom: 4px;
+}
+
