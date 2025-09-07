@@ -91,5 +91,9 @@ if [ -f "$SCRIPT_DIR/rofi.sh" ]; then
     bash "$SCRIPT_DIR/rofi.sh" "$SELECTED_FLAVOR"
 fi
 
+if [ -f "$SCRIPT_DIR/sww.sh" ]; then
+    bash "$SCRIPT_DIR/sww.sh" "$SELECTED_FLAVOR"
+fi
+
 echo "Theme application complete."
 

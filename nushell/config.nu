@@ -1,17 +1,17 @@
-#Theme
-source ~/.config/nushell/themes/catppuccin_latte.nu
+# NU-THEME-START
+source "/home/rio/.config/nushell/themes/catppuccin_latte.nu"
+# NU-THEME-END
+
+# FZF-THEME-START
+source "/home/rio/.config/themes/fzf/latte.nu"
+# FZF-THEME-END
+
 
 # Create vendor directory if it doesn't exist
 mkdir ($nu.data-dir | path join "vendor/autoload")
 
 # Starship prompt
 starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
-
-# Zoxide integration
-if (which zoxide) {
-    zoxide init nushell | save -f ($nu.data-dir | path join "vendor/autoload/zoxide.nu")
-    source ($nu.data-dir | path join "vendor/autoload/zoxide.nu")
-}
 
 # Enhanced yazi command with better error handling
 def --env y [...args] {
@@ -186,13 +186,6 @@ $env.MANPAGER = "sh -c 'col -bx | bat -l man -p'"
 $env.config.buffer_editor = "nvim"
 $env.config.show_banner = false
 
-$env.FZF_DEFAULT_OPTS = "
---color=bg+:#313244,bg:#1E1E2E,spinner:#F5E0DC,hl:#F38BA8
---color=fg:#CDD6F4,header:#F38BA8,info:#CBA6F7,pointer:#F5E0DC
---color=marker:#B4BEFE,fg+:#CDD6F4,prompt:#CBA6F7,hl+:#F38BA8
---color=selected-bg:#45475A
---color=border:#6C7086,label:#CDD6F4"
-
 # --- External Scripts ---
 # source ~/.config/nushell/random-script.nu
 
@@ -213,4 +206,6 @@ def nvims [...args] {
     nvim ...$args
   }
 }
+
+source ~/.zoxide.nu
 
