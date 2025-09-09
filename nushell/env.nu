@@ -42,6 +42,8 @@ path add ($env.HOME | path join ".sdk" "zig")
 
 path add ($env.HOME | path join ".sdk" "platform-tools")
 
+path add ($env.HOME | path join ".sdk" "cmdline-tools" "bin")
+
 path add ($env.HOME | path join ".sdk" "kobweb" "bin")
 
 # ************************ Tools **************************** 

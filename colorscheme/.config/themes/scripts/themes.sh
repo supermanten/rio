@@ -99,5 +99,9 @@ if [ -f "$SCRIPT_DIR/hypr.sh" ]; then
     bash "$SCRIPT_DIR/hypr.sh" "$SELECTED_FLAVOR"
 fi
 
+if [ -f "$SCRIPT_DIR/superfile.sh" ]; then
+    bash "$SCRIPT_DIR/superfile.sh" "$SELECTED_FLAVOR"
+fi
+
 echo "Theme application complete."
 
