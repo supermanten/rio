@@ -9,20 +9,8 @@ function M.setup()
 
 	-- Setup each server listed in servers.lua
 	for _, lsp in ipairs(servers) do
-		lspconfig[lsp].setup({
-			capabilities = capabilities,
-			-- You can add specific settings for each server here if needed
-			-- For example:
-			-- rust_analyzer = {
-			--     settings = {
-			--         ["rust-analyzer"] = {
-			--             checkOnSave = {
-			--                 command = "clippy",
-			--             },
-			--         },
-			--     },
-			-- },
-		})
+		vim.lsp.enable(lsp)
+		capabilities = capabilities
 	end
 end
 
