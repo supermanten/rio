@@ -6,8 +6,6 @@ local M = {
 	"gopls",
 	"pyright",
 	"rust_analyzer",
-	"clangd",
-	"jdtls",
 }
 
 return M
