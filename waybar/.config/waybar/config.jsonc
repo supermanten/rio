@@ -27,10 +27,11 @@
   },
   "network": {
     "tooltip": false,
-    "format-wifi": "<span size='11000' foreground='#a6e3a1'>  </span>{essid}",
-    "format-ethernet": "<span size='11000' foreground='#f38ba8'>󰤭  </span> Disconnected",
+    "format-wifi": "<span size='11000' foreground='#a6e3a1'>  </span>{essid}",
+    // 💡 Change this line to show a connected status!
+    "format-ethernet": "<span size='11000' foreground='#a6e3a1'>󰤭  </span> Connected",
     "format-linked": "{ifname} (No IP) ",
-    "format-disconnected": "<span size='11000' foreground='#f38ba8'>  </span>Disconnected",
+    "format-disconnected": "<span size='11000' foreground='#f38ba8'>  </span>Disconnected",
     "tooltip-format-wifi": "Signal Strenght: {signalStrength}%"
   },
   "bluetooth": {
