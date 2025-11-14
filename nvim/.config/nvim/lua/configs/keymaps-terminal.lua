@@ -14,11 +14,3 @@ map("n", "<leader>Fd", "<cmd>FlutterDevices<CR>", { desc = "Flutter Devices" })
 
 -- ## Todo Comments
 map("n", "<leader>I", ":TodoTelescope<CR>", { desc = "Todo Telescope" })
-
--- ## Move Lines
-map("n", "<A-j>", ":move .+1<CR>==", { desc = "Move Line Down" })
-map("n", "<A-k>", ":move .-2<CR>==", { desc = "Move Line Up" })
-map("v", "<A-j>", ":move '>+1<CR>gv=gv", { desc = "Move Selection Down" })
-map("v", "<A-k>", ":move '<-2<CR>gv=gv", { desc = "Move Selection Up" })
-map("i", "<A-j>", "<Esc>:move .+1<CR>==gi", { desc = "Move Line Down" })
-map("i", "<A-k>", "<Esc>:move .-2<CR>==gi", { desc = "Move Line Up" })

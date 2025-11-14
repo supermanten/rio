@@ -146,12 +146,12 @@ map("n", "<leader>lK", function()
 	end
 end, { desc = "Signature Help" })
 
-map("i", "<C-k>", function()
-	local ok, _ = pcall(vim.lsp.buf.signature_help)
-	if not ok then
-		vim.notify("LSP signature help not available", vim.log.levels.WARN)
-	end
-end, { desc = "Signature Help" })
+-- map("i", "<C-k>", function()
+-- 	local ok, _ = pcall(vim.lsp.buf.signature_help)
+-- 	if not ok then
+-- 		vim.notify("LSP signature help not available", vim.log.levels.WARN)
+-- 	end
+-- end, { desc = "Signature Help" })
 
 -- Diagnostics navigation
 map("n", "<leader>dp", function()
@@ -232,9 +232,9 @@ map("n", "K", function()
 	end
 end, { desc = "Hover Documentation" })
 
-map("n", "<C-k>", function()
-	local ok, _ = pcall(vim.lsp.buf.signature_help)
-	if not ok then
-		vim.notify("LSP signature help not available", vim.log.levels.WARN)
-	end
-end, { desc = "Signature Help" })
+-- map("n", "<C-k>", function()
+-- 	local ok, _ = pcall(vim.lsp.buf.signature_help)
+-- 	if not ok then
+-- 		vim.notify("LSP signature help not available", vim.log.levels.WARN)
+-- 	end
+-- end, { desc = "Signature Help" })

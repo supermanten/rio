@@ -12,12 +12,18 @@ map("n", "<C-k>", "<C-w>k", { desc = "Window Up" })
 map("n", "<C-l>", "<C-w>l", { desc = "Window Right" })
 
 -- Move around in insert mode without leaving
-map("i", "<C-h>", "<Left>", { desc = "Move Left in Insert" })
-map("i", "<C-j>", "<Down>", { desc = "Move Down in Insert" })
-map("i", "<C-k>", "<Up>", { desc = "Move Up in Insert" })
-map("i", "<C-l>", "<Right>", { desc = "Move Right in Insert" })
-map("i", "<C-b>", "<ESC>^i", { desc = "Move to Beginning of Line in Insert" })
+map("i", "<A-h>", "<Left>", { desc = "Move Left in Insert" })
+map("i", "<A-j>", "<Down>", { desc = "Move Down in Insert" })
+map("i", "<A-k>", "<Up>", { desc = "Move Up in Insert" })
+map("i", "<A-l>", "<Right>", { desc = "Move Right in Insert" })
+map("i", "<A-b>", "<ESC>^i", { desc = "Move to Beginning of Line in Insert" })
 -- Note: <C-e> removed to avoid conflict with blink.cmp completion menu
+
+-- ## Move Lines
+map("n", "<leader>j", ":move .+1<CR>==", { desc = "Move Line Down" })
+map("n", "<leader>k", ":move .-2<CR>==", { desc = "Move Line Up" })
+map("v", "<leader>j", ":move '>+1<CR>gv=gv", { desc = "Move Selection Down" })
+map("v", "<leader>k", ":move '<-2<CR>gv=gv", { desc = "Move Selection Up" })
 
 -- Better Indenting
 map("v", "<", "<gv", { desc = "Unindent Selection" })
