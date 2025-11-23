@@ -1,9 +1,9 @@
 return {
 	"MeanderingProgrammer/render-markdown.nvim",
+	event = "VeryLazy",
 	ft = "markdown",
 	opts = {
-		heading = { position = "inline", width = "block"
- },
+		heading = { position = "inline", width = "block" },
 		latex = { enabled = false },
 		checkbox = {
 			checked = { icon = "✔ ", scope_highlight = "@markup.strikethrough" },
