@@ -1,10 +1,7 @@
--- File: lua/plugins/trouble.lua
-
 local mappings = require("core.trouble.mappings")
 
 return {
 	"folke/trouble.nvim",
-	event = "VeryLazy",
 	dependencies = { "nvim-tree/nvim-web-devicons", "folke/todo-comments.nvim" },
 	cmd = { "Trouble" },
 	keys = mappings,

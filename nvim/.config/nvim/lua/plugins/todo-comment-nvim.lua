@@ -43,9 +43,3 @@ return {
 		},
 	},
 }
-
--- TODO:  This is Configuration file
--- FIX:
--- WARNING:
---PERF:
---NOTE:
