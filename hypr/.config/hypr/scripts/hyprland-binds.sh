@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 # Rofi theme
@@ -25,9 +24,13 @@ SUPER + T                             : Launch Terminal
 SUPER + Q                             : Kill Active Window
 SUPER + M                             : Exit Hyprland
 SUPER + E                             : Launch File Manager
+SUPER + B                             : Launch Browser
+SUPER + C                             : Launch Visual Studio Code
+SUPER + W                             : Launch Warp Terminal
 SUPER + V                             : Toggle Floating
 SUPER + SPACE                         : App Launcher
-SUPER + RETURN                        : Launch Terminal
+SUPER + P                             : Toggle Pseudo (dwindle)
+SUPER + J                             : Toggle Split (dwindle)
 
           🧭 Navigation
 
@@ -56,14 +59,14 @@ SUPER + SHIFT + S                     : Move to Scratchpad
 
           🖱️ Mouse Bindings
 
-SUPER + mouse                         : Move Window (LMB)
-SUPER + mouse                         : Resize Window (RMB)
-SUPER + scroll up                     : Prev Workspace
-SUPER + scroll dn                     : Next Workspace
+SUPER + mouse (LMB)                   : Move Window
+SUPER + mouse (RMB)                   : Resize Window
+SUPER + scroll up                     : Previous Workspace
+SUPER + scroll down                   : Next Workspace
 
           📋 Clipboard
 
-SUPER + SHIFT + P : Clipboard Manager
+SUPER + SHIFT + P                     : Clipboard Manager
 
           🌐 Network & Bluetooth
 
@@ -81,8 +84,8 @@ SUPER + SHIFT + V                     : Rofi Video Keybinds
           ⌨️ Hyprland Keybinds
 
 SUPER + SHIFT + I                     : Hypr Key Bind
-SUPER + SHIFT + A                     : Alias hint
-SUPER + SHIPT + Y                     : Yazi Key Bind
+SUPER + SHIFT + A                     : Alias Hint
+SUPER + SHIFT + Y                     : Yazi Key Bind
 SUPER + ALT + E                       : Nvim Key Bind
 
           🎨 Rofi & Themes
@@ -90,6 +93,7 @@ SUPER + ALT + E                       : Nvim Key Bind
 SUPER + D                             : App Launcher (Rofi)
 SUPER + CTRL + R                      : Theme Selector (Rofi)
 SUPER + SHIFT + E                     : Emoji Picker (Rofi)
+SUPER + SHIFT + T                     : Global Theme Selector
 
           🖼️ Wallpaper
 
@@ -105,6 +109,10 @@ SUPER + SHIFT + L                     : Lock Screen
           🔔 Notifications
 
 SUPER + SHIFT + N                     : Toggle SwayNC
+
+          📊 Bar
+
+SUPER + ALT + B                       : Toggle Waybar Visibility
 
           📸 Screenshots
 
@@ -135,3 +143,4 @@ XF86AudioNext                         : Next Track
 XF86AudioPrev                         : Previous Track
 XF86AudioPause                        : Play/Pause
 XF86AudioPlay                         : Play/Pause
+
