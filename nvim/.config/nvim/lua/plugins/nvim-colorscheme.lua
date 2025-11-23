@@ -5,9 +5,9 @@ return {
 	name = "catppuccin",
 	opts = {
 		transparent_background = true,
-		flavour = "macchiato", -- latte, frappe, macchiato, mocha
+		flavour = "mocha", -- latte, frappe, macchiato, mocha
 		background = { -- :h background
-			dark = "macchiato",
+			dark = "mocha",
 		},
 		float = {
 			transparent = true, -- enable transparent floating windows

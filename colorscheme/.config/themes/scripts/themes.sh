@@ -33,74 +33,33 @@ echo "Applying the '$SELECTED_FLAVOR' theme..."
 # ==============================================================================
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 
-# Run each application's script, passing the selected flavor as an argument
-if [ -f "$SCRIPT_DIR/foot.sh" ]; then
-    bash "$SCRIPT_DIR/foot.sh" "$SELECTED_FLAVOR"
-fi
+# List of application script base names (without path)
+APPS=(
+    foot
+    bat
+    bottom
+    btop
+    yazi
+    nu
+    starship
+    swaync
+    nvim
+    lsd
+    hyprlock
+    wlogout
+    waybar
+    rofi
+    sww
+    hypr
+    superfile
+)
 
-if [ -f "$SCRIPT_DIR/bat.sh" ]; then
-    bash "$SCRIPT_DIR/bat.sh" "$SELECTED_FLAVOR"
-fi
-
-if [ -f "$SCRIPT_DIR/bottom.sh" ]; then
-    bash "$SCRIPT_DIR/bottom.sh" "$SELECTED_FLAVOR"
-fi
-
-if [ -f "$SCRIPT_DIR/btop.sh" ]; then
-    bash "$SCRIPT_DIR/btop.sh" "$SELECTED_FLAVOR"
-fi
-
-if [ -f "$SCRIPT_DIR/yazi.sh" ]; then
-    bash "$SCRIPT_DIR/yazi.sh" "$SELECTED_FLAVOR"
-fi
-
-if [ -f "$SCRIPT_DIR/nu.sh" ]; then
-    bash "$SCRIPT_DIR/nu.sh" "$SELECTED_FLAVOR"
-fi
-
-if [ -f "$SCRIPT_DIR/starship.sh" ]; then
-    bash "$SCRIPT_DIR/starship.sh" "$SELECTED_FLAVOR"
-fi
-
-if [ -f "$SCRIPT_DIR/swaync.sh" ]; then
-    bash "$SCRIPT_DIR/swaync.sh" "$SELECTED_FLAVOR"
-fi
-
-if [ -f "$SCRIPT_DIR/nvim.sh" ]; then
-    bash "$SCRIPT_DIR/nvim.sh" "$SELECTED_FLAVOR"
-fi
-
-if [ -f "$SCRIPT_DIR/lsd.sh" ]; then
-    bash "$SCRIPT_DIR/lsd.sh" "$SELECTED_FLAVOR"
-fi
-
-if [ -f "$SCRIPT_DIR/hyprlock.sh" ]; then
-    bash "$SCRIPT_DIR/hyprlock.sh" "$SELECTED_FLAVOR"
-fi
-
-if [ -f "$SCRIPT_DIR/wlogout.sh" ]; then
-    bash "$SCRIPT_DIR/wlogout.sh" "$SELECTED_FLAVOR"
-fi
-
-if [ -f "$SCRIPT_DIR/waybar.sh" ]; then
-    bash "$SCRIPT_DIR/waybar.sh" "$SELECTED_FLAVOR"
-fi
-
-if [ -f "$SCRIPT_DIR/rofi.sh" ]; then
-    bash "$SCRIPT_DIR/rofi.sh" "$SELECTED_FLAVOR"
-fi
-
-if [ -f "$SCRIPT_DIR/sww.sh" ]; then
-    bash "$SCRIPT_DIR/sww.sh" "$SELECTED_FLAVOR"
-fi
-
-if [ -f "$SCRIPT_DIR/hypr.sh" ]; then
-    bash "$SCRIPT_DIR/hypr.sh" "$SELECTED_FLAVOR"
-fi
-
-if [ -f "$SCRIPT_DIR/superfile.sh" ]; then
-    bash "$SCRIPT_DIR/superfile.sh" "$SELECTED_FLAVOR"
-fi
+for app in "${APPS[@]}"; do
+    script_path="$SCRIPT_DIR/$app.sh"
+    if [ -f "$script_path" ]; then
+        bash "$script_path" "$SELECTED_FLAVOR"
+    fi
+done
 
 echo "Theme application complete."
 
