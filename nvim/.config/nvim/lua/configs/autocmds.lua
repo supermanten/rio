@@ -1,12 +1,21 @@
-vim.cmd("set expandtab")
-vim.cmd("set tabstop=2")
-vim.cmd("set softtabstop=2")
-vim.cmd("set shiftwidth=2")
-vim.cmd("colorscheme catppuccin")
+if vim.g.colors_name == nil then
+	vim.cmd("colorscheme catppuccin")
+end
 
 --remove auto-comment
 vim.cmd("autocmd BufEnter * set formatoptions-=cro")
 vim.cmd("autocmd BufEnter * setlocal formatoptions-=cro")
+
+local lualine_module = require("core.lualine")
+vim.api.nvim_create_augroup("LualineThemeReload", { clear = true })
+vim.api.nvim_create_autocmd("ColorScheme", {
+	group = "LualineThemeReload",
+	pattern = "*", -- Apply this to every colorscheme change
+	callback = function()
+		lualine_module.setup()
+		vim.cmd("redraw!")
+	end,
+})
 
 local function augroup(name)
 	return vim.api.nvim_create_augroup("lazyvim_" .. name, { clear = true })
@@ -125,27 +134,27 @@ vim.api.nvim_create_autocmd({ "BufWritePre" }, {
 })
 
 -- make buffer and lualine transparent
-vim.api.nvim_create_autocmd({ "UiEnter", "ColorScheme" }, {
-	callback = function()
-		-- 1.
-		vim.cmd([[
-      hi TabLineFill gui=nocombine
-      hi WinBar gui=nocombine
-    ]])
-		-- 2.
-		vim.cmd([[
-      hi TabLineFill guibg=none
-      hi WinBar gui=none
-    ]])
-		-- 3.
-		vim.cmd([[
-      hi! link TabLineFill Normal
-      hi! link WinBar Normal
-    ]])
-		--4.
-		vim.cmd("hi StatusLine guibg=NONE ctermbg=NONE")
-	end,
-})
+-- vim.api.nvim_create_autocmd({ "UiEnter", "ColorScheme" }, {
+-- 	callback = function()
+-- 		-- 1.
+-- 		vim.cmd([[
+--       hi TabLineFill gui=nocombine
+--       hi WinBar gui=nocombine
+--     ]])
+-- 		-- 2.
+-- 		vim.cmd([[
+--       hi TabLineFill guibg=none
+--       hi WinBar gui=none
+--     ]])
+-- 		-- 3.
+-- 		vim.cmd([[
+--       hi! link TabLineFill Normal
+--       hi! link WinBar Normal
+--     ]])
+-- 		--4.
+-- 		vim.cmd("hi StatusLine guibg=NONE ctermbg=NONE")
+-- 	end,
+-- })
 
 -- Dim inactive windows
 -- vim.api.nvim_create_autocmd({ "WinEnter", "FocusGained" }, {
