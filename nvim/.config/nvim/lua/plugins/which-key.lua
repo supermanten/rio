@@ -1,6 +1,5 @@
 return {
 	"folke/which-key.nvim",
-	event = "VeryLazy",
 	opts = {
 		timeout = 500,
 		win = {
