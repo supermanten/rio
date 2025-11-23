@@ -1,6 +1,5 @@
 return {
 	"nvzone/showkeys",
-	event = "VeryLazy",
 	cmd = "ShowkeysToggle",
 	opts = {
 		timeout = 1,

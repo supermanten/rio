@@ -1,6 +1,5 @@
 return {
 	"MeanderingProgrammer/render-markdown.nvim",
-	event = "VeryLazy",
 	ft = "markdown",
 	opts = {
 		heading = { position = "inline", width = "block" },
