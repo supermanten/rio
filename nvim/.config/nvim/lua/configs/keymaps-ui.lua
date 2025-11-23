@@ -4,7 +4,6 @@ local safe_map = util.safe_map
 
 basic_map("n", "<leader>h", "<cmd>Alpha<CR>", "Alpha")
 
--- Reload nvim (LINE 8/9 area)
 basic_map("n", "<leader>ur", "<Cmd>update<CR><Cmd>source<CR>", "Reload nvim")
 
 safe_map("n", "<leader>ut", function()
